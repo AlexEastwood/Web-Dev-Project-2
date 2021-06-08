@@ -12,6 +12,13 @@ header {
     height: 100vh;
 }
 p {
+    display: block;
+    text-align: center;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 20px;
+}
+h2 {
     text-align: center;
 }
 .links {
@@ -32,6 +39,11 @@ p {
 }
 .title {
     text-align: center;
+}
+.images {
+    display: block;
+    width: 90vw;
+    margin: auto;
 }
 #profile-pic {
     max-width: 70vw;
