@@ -1,57 +1,86 @@
 body {
-    font-family: 'Cairo', sans-serif;
     margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    color: #282828;
 }
 header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     background-color: #fafafa;
     align-items: center;
     flex-grow: 1;
     justify-content: stretch;
     height: 100vh;
+    width: 100vw;
 }
-p {
-    display: block;
-    text-align: center;
-    width: 90vw;
-    margin: auto;
-    margin-bottom: 20px;
+a:link, a:hover {
+    text-decoration: none;
+    color: #282828;
+ }
+a {
+    color: #282828;
 }
-h2 {
+#name {
     text-align: center;
+}
+.profile-pic {
+    max-width: 70vw;
+    margin-top: 30px;
 }
 .links {
     display: flex;
-    flex: 1;
-    min-width: 90vw;
+    flex-direction: column;
+    text-decoration: none;
+}
+.link {
     background-color: white;
     text-decoration: none;
-    margin: 0.25rem;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.25rem;
-    padding: -20vh;
-}
-.name {
-    font-size: 2.5em;
     text-align: center;
+    width: 85vw;
+    margin: 5px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
-.title {
+.intro {
     text-align: center;
+    color: gray;
+    margin-top: 20px;
 }
-.images {
-    display: block;
-    width: 90vw;
-    margin: auto;
+
+
+@media screen and (min-width: 768px) {
+    .links {
+        flex-direction: row;
+    }
+    .link {
+        width: initial;
+        background-color: inherit;
+        font-size: 1rem;
+    }
 }
-#profile-pic {
-    max-width: 70vw;
-    margin-top: 5vh;
+@media screen and (min-width: 1024px){
+    header {
+        align-items:baseline;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    #name {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+    .links {
+
+    }
+    .break {
+        flex-basis: 100%;
+        height: 0;
+      }
+    .profile-pic {
+        margin-top: -300px;
+    }
 }
-#introduction {
-    color: grey;
-}
-#portfolio {
-    margin: 70px;
-}
+
