@@ -11,19 +11,20 @@
 	</head>
 	<body>
 		<header>
-			<h1 id="name">Student Name</h1>
-			<div class="links">
-				<a href="#">
-					<div class="link">HOME</div>
-				</a><a href="#">
-					<div class="link">PORTFOLIO</div>
-				</a><a href="#">
-					<div class="link">CONTACT</div>
-				</a>
+			<div class-"flex-grid name-container">
+				<div class="col name">Student Name</div>
 			</div>
-			<div class="break"></div>
-			<img class="profile-pic" src="images/responsive-layout-profile.png" alt="">
-			<p class="intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treeouse and am excited to put all my skills to use!</p>
+			<div class="flex-grid links">
+				<div class="col">HOME</div>
+				<div class="col">PORTFOLIO</div>
+				<div class="col">CONTACTS</div>
+			</div>
+			<div class="row">
+				<div class="flex-grid profile">
+					<img class="profile-pic" src="images/responsive-layout-profile.png" alt="">
+				</div>
+				<div class="flex-grid intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</div>
+			</div>
 		</header>
 	</body>
 </html>

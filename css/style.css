@@ -1,86 +1,99 @@
-body {
-    margin: 0;
-    font-family: 'DM Sans', sans-serif;
-    display: flex;
-    color: #282828;
+* {
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: "DM Sans", sans-serif;
 }
 header {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    background-color: #fafafa;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: stretch;
+    width: 100%;
     height: 100vh;
-    width: 100vw;
+    background-color: whitesmoke;
 }
-a:link, a:hover {
-    text-decoration: none;
-    color: #282828;
- }
-a {
-    color: #282828;
+.flex-grid {
+    display: flex;
+    margin: 0 0 20px 0;
+    justify-content: center;
 }
-#name {
+.col {
+    padding: 20px;
+}
+.flex-grid .col {
+    flex: 1;
+    margin-top: .5rem;
+}
+.flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-grid-thirds .col {
+    width: 32%;
+}
+.name {
     text-align: center;
-}
-.profile-pic {
-    max-width: 70vw;
-    margin-top: 30px;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: -20px;
 }
 .links {
-    display: flex;
     flex-direction: column;
-    text-decoration: none;
+    align-items: center;
 }
-.link {
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    width: 85vw;
-    margin: 5px;
-    padding: 10px;
+.links .col {
     font-weight: 500;
-    font-size: 1.3rem;
+    text-align: center;
+    padding: 7px;
+    width: 90%;
+    background-color: white;
+}
+.profile-pic {
+    justify-content: center;
+    margin-top: 30px;
+    width: 60%;
+    height: auto;
 }
 .intro {
     text-align: center;
     color: gray;
-    margin-top: 20px;
 }
-
 
 @media screen and (min-width: 768px) {
-    .links {
-        flex-direction: row;
-    }
-    .link {
-        width: initial;
-        background-color: inherit;
-        font-size: 1rem;
-    }
-}
-@media screen and (min-width: 1024px){
     header {
-        align-items:baseline;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-    }
-    #name {
-        margin-left: 10px;
-        margin-top: 0;
+        align-items: center;
     }
     .links {
-
+        flex-direction: row;
+        width: 50%;
     }
-    .break {
-        flex-basis: 100%;
-        height: 0;
-      }
-    .profile-pic {
-        margin-top: -300px;
+    .links .col {
+        background: none;
+    }
+    .flex-grid .profile {
+        align-self: flex-end;
+    }
+    .name-container {
+        width: 100%;
+    }
+    .profile {
+        order: 1;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    .intro {
+        margin-left: 20px;
+        width: 50%;
+        text-align: left;
     }
 }
 
+
+
+  
+  
+  
+  
