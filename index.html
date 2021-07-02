@@ -13,9 +13,9 @@
 		<header>
 			<div class="name">Student Name</div>
 			<div class="links">
-				<div class="link">HOME</div>
-				<div class="link">PORTFOLIO</div>
-				<div class="link">CONTACT</div>
+				<a href="#top"><div class="link">HOME</div></a>
+				<a href="#portfolio"><div class="link">PORTFOLIO</div></a>
+				<a href="#contact"><div class="link">CONTACT</div></a>
 			</div>
 			<img class="profile-pic" src="images\responsive-layout-profile.png" alt="">
 			<div class="intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</div>
@@ -54,17 +54,17 @@
 			</article>			
 		</main>
 		<footer>
-			<h3>CONTACT</h3>
+			<h3 id="contact">CONTACT</h3>
 			<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 			<span>Phone <strong>+1 (111) 555-1234</strong></span>
 			<span>Email <strong> email@yoursite.com</strong></span>
 		 	<hr>
 			<div class="footer-links">
 				<div id="footer-name">Student Name</div>
-				<div id="back-to-top">BACK TO TOP</div>
-				<div class="footer-link">HOME</div>
-				<div class="footer-link">PORTFOLIO</div>
-				<div class="footer-link">CONTACT</div>
+				<a class="back-to-top" href="#top"><div id="back-to-top">BACK TO TOP</div></a>
+				<a class="hidden" href="#top"><div class="footer-link">HOME</div></a>
+				<a class="hidden" href="#portfolio"><div class="footer-link">PORTFOLIO</div></a>
+				<a class="hidden" href="#contact"><div class="footer-link">CONTACT</div></a>
 			</div>
 		</footer>
 

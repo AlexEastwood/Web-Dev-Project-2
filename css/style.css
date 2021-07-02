@@ -53,6 +53,16 @@ hr {
     width: 90%;
     color: whitesmoke;
 }
+header a {
+    display: block;
+    width: 90%;
+    color: black;
+    text-decoration: none;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
 .name {
     font-size: 2.1rem;
     font-weight: 500;
@@ -68,7 +78,6 @@ hr {
     font-size: 1.4rem;
     text-align: center;
     background-color: white;
-    width: 90%;
     padding: 3px 0px;
 }
 .profile-pic {
@@ -97,6 +106,9 @@ hr {
     margin-bottom: 10px;
 }
 .footer-link {
+    display: none;
+}
+.hidden {
     display: none;
 }
 #portfolio {
@@ -143,7 +155,7 @@ hr {
         margin: 0px 30px;
     }
     .intro {
-        width: 50%;
+        width: 49%;
         margin-left: 25px;
         text-align: left;
         font-size: 1.4rem;
@@ -153,7 +165,7 @@ hr {
         order: 2;
         margin-top: 5px;
         margin-left: auto;
-        margin-right: 25px;
+        margin-right: 50px;
     }
     .footer-links {
         justify-content: flex-end;
@@ -174,6 +186,9 @@ hr {
     }
     #back-to-top {
         display: none;
+    }
+    .hidden {
+        display: contents;
     }
 }   
 @media screen and (min-width: 1024px) {
@@ -202,9 +217,10 @@ hr {
     }
     .intro {
         color: #505050;
+        
     }
     .profile-pic {
-        margin-right: 50px;
+        width: 30%; 
     }
     .footer-links {
         padding: 25px 50px;
