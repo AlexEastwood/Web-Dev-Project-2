@@ -17,6 +17,23 @@ header {
 header div {
     margin: 5px;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    font-weight: 500;
+}
+p {
+    width: 90%;
+    text-align: center;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .name {
     font-size: 2.1rem;
     font-weight: 500;
@@ -46,6 +63,14 @@ header div {
     text-align: center;
     font-size: 1.2rem;
 }
+.portfolio-images {
+    width: 90%;
+    max-width: 400px;
+}
+#portfolio {
+    margin: 50px 0px;
+}
+
 @media screen and (min-width: 768px) {
     header {
         flex-direction: row;
@@ -53,6 +78,18 @@ header div {
         flex-wrap: wrap;
         align-content: flex-start;
         height: auto;
+    }
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    article {
+        width: 49%;
+        margin-bottom: 50px;
+        justify-content: flex-start;
+    }
+    h2 {
+        margin-bottom: -5px;
     }
     .name {
         width: 100%;
@@ -83,11 +120,19 @@ header div {
         margin-left: auto;
         margin-right: 25px;
     }
+    #portfolio {
+        width: 100%;
+        text-align: center;
+    }
 }   
 @media screen and (min-width: 1024px) {
+    article {
+        width: 32%;
+    }
     .name {
-        width: auto;
+        width: 50%;
         margin-left: 20px;
+        text-align: left;
     }
     .links {
         width: auto;
