@@ -9,91 +9,69 @@ body{
 header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    width: 100vw;
     height: 100vh;
-    background-color: whitesmoke;
+    background-color: #F8F8F8;
 }
-.flex-grid {
-    display: flex;
-    margin: 0 0 20px 0;
-    justify-content: center;
-}
-.col {
-    padding: 20px;
-}
-.flex-grid .col {
-    flex: 1;
-    margin-top: .5rem;
-}
-.flex-grid-thirds {
-    display: flex;
-    justify-content: space-between;
-}
-.flex-grid-thirds .col {
-    width: 32%;
+header div {
+    margin: 5px;
 }
 .name {
-    text-align: center;
+    font-size: 2.1rem;
     font-weight: 500;
-    font-size: 2rem;
-    margin-bottom: -20px;
 }
 .links {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
-.links .col {
+.link {
     font-weight: 500;
+    font-size: 1.4rem;
     text-align: center;
-    padding: 7px;
-    width: 90%;
     background-color: white;
+    width: 90%;
+    padding: 3px 0px;
 }
 .profile-pic {
-    justify-content: center;
-    margin-top: 30px;
-    width: 60%;
+    width: 70%;
     height: auto;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 .intro {
-    text-align: center;
     color: gray;
+    text-align: center;
+    font-size: 1.2rem;
 }
-
 @media screen and (min-width: 768px) {
     header {
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .name {
+        width: 100%;
+        text-align: center;
+        margin: 40px 0px;
     }
     .links {
         flex-direction: row;
-        width: 50%;
+        justify-content: center;
     }
-    .links .col {
-        background: none;
-    }
-    .flex-grid .profile {
-        align-self: flex-end;
-    }
-    .name-container {
-        width: 100%;
-    }
-    .profile {
-        order: 1;
-    }
-    .row {
-        display: flex;
-        flex-direction: row;
+    .link {
+        background-color: transparent;
+        width: auto;
+        margin: 0px 30px;
     }
     .intro {
-        margin-left: 20px;
-        width: 50%;
-        text-align: left;
+        width: 30%;
     }
-}
-
-
-
-  
-  
-  
+    .profile-pic {
+        width: 30%;
+        order: 2;
+    }
+}   
   
